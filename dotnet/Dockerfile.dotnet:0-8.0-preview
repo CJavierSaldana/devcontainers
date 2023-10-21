@@ -1,0 +1,5 @@
+FROM mcr.microsoft.com/devcontainers/dotnet:0-7.0
+
+RUN mkdir -p $HOME/dotnet_install && cd $HOME/dotnet_install && \
+    curl -L https://aka.ms/install-dotnet-preview -o install-dotnet-preview.sh && \
+    bash install-dotnet-preview.sh
